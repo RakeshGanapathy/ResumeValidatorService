@@ -18,7 +18,7 @@ def index(request):
 
 def process_resume_queries(params):
     field = params['q']
-    expr = params['q']
+    expr = params['d']
     with open(os.path.join(os.path.dirname(__file__),
                            "resume_properties.json"), 'r') as json_file:
         data = json.load(json_file)
